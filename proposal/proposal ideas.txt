@@ -1,0 +1,4 @@
+the risks of eval
+window.Function() instead of eval(), window.Function() in global scope
+automatatic migration from synchronous to asynchronous
+typing systems in JavaScript
