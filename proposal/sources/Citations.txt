@@ -1,0 +1,163 @@
+A Two-Tier Sandbox Architecture for Untrusted JavaScript
+
+Phu H. Phung and Lieven Desmet. 2012. A two-tier sandbox architecture for untrusted JavaScript. In Proceedings of the Workshop on JavaScript Tools (JSTools '12). Association for Computing Machinery, New York, NY, USA, 1–10. DOI:https://doi.org/10.1145/2307720.2307721
+
+@inproceedings{10.1145/2307720.2307721,
+author = {Phung, Phu H. and Desmet, Lieven},
+title = {A Two-Tier Sandbox Architecture for Untrusted JavaScript},
+year = {2012},
+isbn = {9781450312745},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2307720.2307721},
+doi = {10.1145/2307720.2307721},
+abstract = {The large majority of websites nowadays embeds third-party JavaScript into their pages, coming from external partners. Ideally, these scripts are benign and come from trusted sources, but over time, these third-party scripts can start to misbehave, or to come under control of an attacker. Unfortunately, the state-of-practice integration techniques for third-party scripts do not impose restrictions on the execution of JavaScript code, allowing such an attacker to perform unwanted actions on behalf of the website owner and/or website visitor.In this paper, we present a two-tier sandbox architecture to enable a website owner to enforce modular fine-grained security policies for potential untrusted third-party JavaScript code. The architecture contains an outer sandbox that provides strong baseline isolation guarantees with generic, coarse-grained policies and an inner sandbox that enables fine-grained, stateful policy enforcement specific to a particular untrusted application. The two-tier approach ensures that the application-specific policies and untrusted code are by default confined to a basic security policy, without imposing restrictions on the expressiveness of the policies.Our proposed architecture improves upon the state-of-the-art as it does not depend on browser modification nor preprocessing or transformation of untrusted code, and allows the secure enforcement of fine-grained, stateful access control policies. We have developed a prototype implementation on top of a open-source sandbox library in the ECMAScript 5 specification, and applied it to a representative online advertisement case study to validate the feasibility and security of the proposed architecture.},
+booktitle = {Proceedings of the Workshop on JavaScript Tools},
+pages = {1–10},
+numpages = {10},
+keywords = {Sandbox, ECMAScript 5, fine-grained security policy, web application security, untrusted, JavaScript, web mashups},
+location = {Beijing, China},
+series = {JSTools '12}
+}
+
+An Analysis of the Dynamic Behavior of JavaScript Programs
+
+Gregor Richards, Sylvain Lebresne, Brian Burg, and Jan Vitek. 2010. An analysis of the dynamic behavior of JavaScript programs. SIGPLAN Not. 45, 6 (June 2010), 1–12. DOI:https://doi.org/10.1145/1809028.1806598
+
+@inproceedings{10.1145/1806596.1806598,
+author = {Richards, Gregor and Lebresne, Sylvain and Burg, Brian and Vitek, Jan},
+title = {An Analysis of the Dynamic Behavior of JavaScript Programs},
+year = {2010},
+isbn = {9781450300193},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1806596.1806598},
+doi = {10.1145/1806596.1806598},
+abstract = {The JavaScript programming language is widely used for web programming and, increasingly, for general purpose computing. As such, improving the correctness, security and performance of JavaScript applications has been the driving force for research in type systems, static analysis and compiler techniques for this language. Many of these techniques aim to reign in some of the most dynamic features of the language, yet little seems to be known about how programmers actually utilize the language or these features. In this paper we perform an empirical study of the dynamic behavior of a corpus of widely-used JavaScript programs, and analyze how and why the dynamic features are used. We report on the degree of dynamism that is exhibited by these JavaScript programs and compare that with assumptions commonly made in the literature and accepted industry benchmark suites.},
+booktitle = {Proceedings of the 31st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {1–12},
+numpages = {12},
+keywords = {execution tracing, javascript, dynamic metrics, program analysis, dynamic behavior},
+location = {Toronto, Ontario, Canada},
+series = {PLDI '10}
+}
+
+
+@article{10.1145/1809028.1806598,
+author = {Richards, Gregor and Lebresne, Sylvain and Burg, Brian and Vitek, Jan},
+title = {An Analysis of the Dynamic Behavior of JavaScript Programs},
+year = {2010},
+issue_date = {June 2010},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {45},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/1809028.1806598},
+doi = {10.1145/1809028.1806598},
+abstract = {The JavaScript programming language is widely used for web programming and, increasingly, for general purpose computing. As such, improving the correctness, security and performance of JavaScript applications has been the driving force for research in type systems, static analysis and compiler techniques for this language. Many of these techniques aim to reign in some of the most dynamic features of the language, yet little seems to be known about how programmers actually utilize the language or these features. In this paper we perform an empirical study of the dynamic behavior of a corpus of widely-used JavaScript programs, and analyze how and why the dynamic features are used. We report on the degree of dynamism that is exhibited by these JavaScript programs and compare that with assumptions commonly made in the literature and accepted industry benchmark suites.},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {1–12},
+numpages = {12},
+keywords = {javascript, dynamic behavior, execution tracing, dynamic metrics, program analysis}
+}
+
+Automatic Migration from Synchronous to Aysnchronous JavaScript APIs
+
+Satyajit Gokhale, Alexi Turcotte, and Frank Tip. 2021. Automatic migration from synchronous to asynchronous JavaScript APIs. Proc. ACM Program. Lang. 5, OOPSLA, Article 160 (October 2021), 27 pages. DOI:https://doi.org/10.1145/3485537
+
+@article{10.1145/3485537,
+author = {Gokhale, Satyajit and Turcotte, Alexi and Tip, Frank},
+title = {Automatic Migration from Synchronous to Asynchronous JavaScript APIs},
+year = {2021},
+issue_date = {October 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {5},
+number = {OOPSLA},
+url = {https://doi.org/10.1145/3485537},
+doi = {10.1145/3485537},
+abstract = {The JavaScript ecosystem provides equivalent synchronous and asynchronous Application Programming Interfaces (APIs) for many commonly used I/O operations. Synchronous APIs involve straightforward sequential control flow that makes them easy to use and understand, but their "blocking" behavior may result in poor responsiveness or performance. Asynchronous APIs impose a higher syntactic burden that relies on callbacks, promises, and higher-order functions. On the other hand, their nonblocking behavior enables applications to scale better and remain responsive while I/O requests are being processed. While it is generally understood that asynchronous APIs have better performance characteristics, many applications still rely on synchronous APIs. In this paper, we present a refactoring technique for assisting programmers with the migration from synchronous to asynchronous APIs. The technique relies on static analysis to determine where calls to synchronous API functions can be replaced with their asynchronous counterparts, relying on JavaScript's async/await feature to minimize disruption to the source code. Since the static analysis is potentially unsound, the proposed refactorings are presented as suggestions that must be reviewed and confirmed by the programmer. The technique was implemented in a tool named Desynchronizer. In an empirical evaluation on 12 subject applications containing 316 synchronous API calls, Desynchronizer identified 256 of these as candidates for refactoring. Of these candidates, 244 were transformed successfully, and only 12 resulted in behavioral changes. Further inspection of these cases revealed that the majority of these issues can be attributed to unsoundness in the call graph.},
+journal = {Proc. ACM Program. Lang.},
+month = {oct},
+articleno = {160},
+numpages = {27},
+keywords = {Asynchronous Programming, Refactoring, JavaScript, Static Analysis}
+}
+
+Characterizing Insecure JavaScript Practices on the Web
+
+Chuan Yue and Haining Wang. 2009. Characterizing insecure javascript practices on the web. In Proceedings of the 18th international conference on World wide web (WWW '09). Association for Computing Machinery, New York, NY, USA, 961–970. DOI:https://doi.org/10.1145/1526709.1526838
+
+@inproceedings{10.1145/1526709.1526838,
+author = {Yue, Chuan and Wang, Haining},
+title = {Characterizing Insecure Javascript Practices on the Web},
+year = {2009},
+isbn = {9781605584874},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1526709.1526838},
+doi = {10.1145/1526709.1526838},
+abstract = {JavaScript is an interpreted programming language most often used for enhancing webpage interactivity and functionality. It has powerful capabilities to interact with webpage documents and browser windows, however, it has also opened the door for many browser-based security attacks. Insecure engineering practices of using JavaScript may not directly lead to security breaches, but they can create new attack vectors and greatly increase the risks of browser-based attacks. In this paper, we present the first measurement study on insecure practices of using JavaScript on the Web. Our focus is on the insecure practices of JavaScript inclusion and dynamic generation, and we examine their severity and nature on 6,805 unique websites. Our measurement results reveal that insecure JavaScript practices are common at various websites: (1) at least 66.4% of the measured websites manifest the insecure practices of including JavaScript files from external domains into the top-level documents of their webpages; (2) over 44.4% of the measured websites use the dangerous eval() function to dynamically generate and execute JavaScript code on their webpages; and (3) in JavaScript dynamic generation, using the document.write() method and the innerHTML property is much more popular than using the relatively secure technique of creating script elements via DOM methods. Our analysis indicates that safe alternatives to these insecure practices exist in common cases and ought to be adopted by website developers and administrators for reducing potential security risks.},
+booktitle = {Proceedings of the 18th International Conference on World Wide Web},
+pages = {961–970},
+numpages = {10},
+keywords = {same origin policy, AST tree matching, javascript, web engineering, security, execution-based measurement},
+location = {Madrid, Spain},
+series = {WWW '09}
+}
+
+Fingerprinting Information in JavaScript Implementations
+
+K. Mowery, D. Bogenreif, S. Yilek, and H. Shacham. 2011. Fingerprinting
+Information in JavaScript Implementations. In Proceedings of Web 2.0
+Security and Privacy 2011 (W2SP), San Franciso, May 2011.
+
+@inproceedings{Mowery2011FingerprintingII,
+  title={Fingerprinting Information in JavaScript Implementations},
+  author={Keaton Mowery and Dillon Bogenreif and Scott Yilek and Hovav Shacham},
+  year={2011}
+}
+
+Node.js: Using JavaScript to Build High-Performance Network Programs
+
+S. Tilkov and S. Vinoski, "Node.js: Using JavaScript to Build High-Performance Network Programs," in IEEE Internet Computing, vol. 14, no. 6, pp. 80-83, Nov.-Dec. 2010, doi: 10.1109/MIC.2010.145.
+
+@ARTICLE{5617064,
+author={Tilkov, Stefan and Vinoski, Steve},
+journal={IEEE Internet Computing}, 
+title={Node.js: Using JavaScript to Build High-Performance Network Programs}, 
+year={2010},
+volume={14},
+number={6},
+pages={80-83},
+abstract={One of the more interesting developments recently gaining popularity in the server-side JavaScript space is Node.js. It's a framework for developing high-performance, concurrent programs that don't rely on the mainstream multithreading approach but use asynchronous I/O with an event-driven programming model.},
+keywords={},
+doi={10.1109/MIC.2010.145},
+ISSN={1941-0131},
+month={Nov},}
+
+Towards a Program Logic for JavaScript
+
+Philippa Anne Gardner, Sergio Maffeis, and Gareth David Smith. 2012. Towards a program logic for JavaScript. SIGPLAN Not. 47, 1 (January 2012), 31–44. DOI:https://doi.org/10.1145/2103621.2103663
+
+@article{10.1145/2103621.2103663,
+author = {Gardner, Philippa Anne and Maffeis, Sergio and Smith, Gareth David},
+title = {Towards a Program Logic for JavaScript},
+year = {2012},
+issue_date = {January 2012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {47},
+number = {1},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/2103621.2103663},
+doi = {10.1145/2103621.2103663},
+abstract = {JavaScript has become the most widely used language for client-side web programming. The dynamic nature of JavaScript makes understanding its code notoriously difficult, leading to buggy programs and a lack of adequate static-analysis tools. We believe that logical reasoning has much to offer JavaScript: a simple description of program behaviour, a clear understanding of module boundaries, and the ability to verify security contracts. We introduce a program logic for reasoning about a broad subset of JavaScript, including challenging features such as prototype inheritance and "with". We adapt ideas from separation logic to provide tractable reasoning about JavaScript code: reasoning about easy programs is easy; reasoning about hard programs is possible. We prove a strong soundness result. All libraries written in our subset and proved correct with respect to their specifications will be well-behaved, even when called by arbitrary JavaScript code.},
+journal = {SIGPLAN Not.},
+month = {jan},
+pages = {31–44},
+numpages = {14},
+keywords = {javascript, web, separation logic}
+}
