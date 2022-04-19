@@ -161,3 +161,15 @@ pages = {31–44},
 numpages = {14},
 keywords = {javascript, web, separation logic}
 }
+
+Inspecting JavaScript Vulnerability Mitigation Patches with Automated Fix Generation in Mind
+
+@inbook{inbook,
+author = {Hegedüs, Péter},
+year = {2020},
+month = {09},
+pages = {975-988},
+title = {Inspecting JavaScript Vulnerability Mitigation Patches with Automated Fix Generation in Mind},
+isbn = {978-3-030-58810-6},
+doi = {10.1007/978-3-030-58811-3_69}
+}
